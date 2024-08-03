@@ -1,0 +1,254 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "name": "Tour Nha Trang - Tân Cương 4 ngày 3 đêm",
+            "presale": 6200000,
+            "price": 5999999,
+            "hot": 1,
+            "duration": "4 ngày 3 đêm",
+            "address": "Đà Lạt, Nha Trang",
+            "image": "https://www.vietnambooking.com/wp-content/uploads/2023/03/tour-du-lich-tan-cuong-9n9d.png",
+            "description": "Tham gia tour Nha Trang Đà Lạt 4 ngày 3 đêm của Vietnam Booking, quý khách sẽ được phiêu du nơi miền cát trắng và cao nguyên mờ sương lãng mạn.",
+            "category": "miền Nam"
+        },
+        {
+            "id": 2,
+            "name": "Tour Hà Nội - Hạ Long 3 ngày 2 đêm",
+            "presale": 5200000,
+            "price": 4999999,
+            "hot": 1,
+            "duration": "3 ngày 2 đêm",
+            "address": "Hà Nội, Hạ Long",
+            "image": "https://www.vietnambooking.com/wp-content/uploads/2024/07/tour-nhat-ban-tokyo-disneyland-phu-si-5n4d-1-300x194.jpg",
+            "description": "Khám phá Hà Nội cổ kính và vịnh Hạ Long tuyệt đẹp trong tour 3 ngày 2 đêm.",
+            "category": "miền Bắc"
+        },
+        {
+            "id": 3,
+            "name": "Tour Sapa - Lào Cai 3 ngày 2 đêm",
+            "presale": 4500000,
+            "price": 4299999,
+            "hot": 0,
+            "duration": "3 ngày 2 đêm",
+            "address": "Sapa, Lào Cai",
+            "image": "https://www.vietnambooking.com/wp-content/uploads/2024/07/tour-da-nang-ba-na-hoi-an-rung-dua-bay-mau-4n3d-2-1-300x194.jpg",
+            "description": "Trải nghiệm không gian mát mẻ của Sapa và Lào Cai trong tour 3 ngày 2 đêm.",
+            "category": "miền Bắc"
+        },
+        {
+            "id": 4,
+            "name": "Tour Phú Quốc - Nam Đảo 4 ngày 3 đêm",
+            "presale": 7000000,
+            "price": 6799999,
+            "hot": 1,
+            "duration": "4 ngày 3 đêm",
+            "address": "Phú Quốc, Kiên Giang",
+            "image": "https://www.vietnambooking.com/wp-content/uploads/2023/12/tour-ha-noi-ha-long-sapa-5n4d-5-300x194.jpg",
+            "description": "Thưởng thức vẻ đẹp của Phú Quốc và Nam Đảo trong tour 4 ngày 3 đêm.",
+            "category": "miền Nam"
+        },
+        {
+            "id": 5,
+            "name": "Tour Huế - Đà Nẵng 5 ngày 4 đêm",
+            "presale": 8000000,
+            "price": 7799999,
+            "hot": 0,
+            "duration": "5 ngày 4 đêm",
+            "address": "Huế, Đà Nẵng",
+            "image": "https://www.vietnambooking.com/wp-content/uploads/2024/03/tour-Euro-chau-au-9n8d-300x194.jpg",
+            "description": "Khám phá di sản Huế và thành phố biển Đà Nẵng trong tour 5 ngày 4 đêm.",
+            "category": "miền Trung"
+        },
+        {
+            "id": 6,
+            "name": "Tour Cần Thơ - Mỹ Tho 2 ngày 1 đêm",
+            "presale": 3500000,
+            "price": 3299999,
+            "hot": 0,
+            "duration": "2 ngày 1 đêm",
+            "address": "Cần Thơ, Mỹ Tho",
+            "image": "https://www.vietnambooking.com/wp-content/uploads/2024/03/tour-con-minh-dai-ly-le-giang-shangrila-6n5d-9-300x194.jpg",
+            "description": "Trải nghiệm miền Tây sông nước với tour Cần Thơ và Mỹ Tho 2 ngày 1 đêm.",
+            "category": "miền Nam"
+        },
+        {
+            "id": 7,
+            "name": "Tour Đà Lạt - Lâm Đồng 3 ngày 2 đêm",
+            "presale": 4700000,
+            "price": 4499999,
+            "hot": 1,
+            "duration": "3 ngày 2 đêm",
+            "address": "Đà Lạt, Lâm Đồng",
+            "image": "https://www.vietnambooking.com/wp-content/uploads/2024/03/tour-hoa-anh-dao-nhat-ban-8-300x194.jpg",
+            "description": "Thưởng ngoạn cảnh đẹp Đà Lạt với tour 3 ngày 2 đêm.",
+            "category": "miền Nam"
+        },
+        {
+            "id": 8,
+            "name": "Tour Đà Nẵng - Hội An 4 ngày 3 đêm",
+            "presale": 6300000,
+            "price": 6099999,
+            "hot": 1,
+            "duration": "4 ngày 3 đêm",
+            "address": "Đà Nẵng, Hội An",
+            "image": "https://www.vietnambooking.com/wp-content/uploads/2024/03/tour-hoa-anh-dao-han-quoc-8-300x194.jpg",
+            "description": "Khám phá phố cổ Hội An và thành phố biển Đà Nẵng trong tour 4 ngày 3 đêm.",
+            "category": "miền Trung"
+        },
+        {
+            "id": 9,
+            "name": "Tour Ninh Bình - Tam Cốc 2 ngày 1 đêm",
+            "presale": 4000000,
+            "price": 3799999,
+            "hot": 0,
+            "duration": "2 ngày 1 đêm",
+            "address": "Ninh Bình, Tam Cốc",
+            "image": "https://www.vietnambooking.com/wp-content/uploads/2023/10/tour-du-lich-thai-lan-5n4d-mua-le-hoi-yi-peng-7-300x194.jpg",
+            "description": "Khám phá vẻ đẹp thiên nhiên của Ninh Bình và Tam Cốc trong tour 2 ngày 1 đêm.",
+            "category": "miền Bắc"
+        },
+        {
+            "id": 10,
+            "name": "Tour Mũi Né - Phan Thiết 3 ngày 2 đêm",
+            "presale": 5000000,
+            "price": 4799999,
+            "hot": 1,
+            "duration": "3 ngày 2 đêm",
+            "address": "Mũi Né, Phan Thiết",
+            "image": "https://www.vietnambooking.com/wp-content/uploads/2023/10/tour-du-lich-thai-lan-4-ngay-3-dem-tet-am-lich-1-300x194.jpg",
+            "description": "Thưởng thức không gian biển đẹp của Mũi Né và Phan Thiết trong tour 3 ngày 2 đêm.",
+            "category": "miền Nam"
+        },
+        {
+            "id": 11,
+            "name": "Tour Quy Nhơn - Phú Yên 4 ngày 3 đêm",
+            "presale": 6500000,
+            "price": 6299999,
+            "hot": 0,
+            "duration": "4 ngày 3 đêm",
+            "address": "Quy Nhơn, Phú Yên",
+            "image": "https://www.vietnambooking.com/wp-content/uploads/2023/04/tour-dong-bang-song-cuu-long-2-300x194.jpg",
+            "description": "Khám phá vẻ đẹp hoang sơ của Quy Nhơn và Phú Yên trong tour 4 ngày 3 đêm.",
+            "category": "miền Trung"
+        },
+        {
+            "id": 12,
+            "name": "Tour Buôn Ma Thuột - Đắk Lắk 3 ngày 2 đêm",
+            "presale": 4700000,
+            "price": 4499999,
+            "hot": 0,
+            "duration": "3 ngày 2 đêm",
+            "address": "Buôn Ma Thuột, Đắk Lắk",
+            "image": "https://www.vietnambooking.com/wp-content/uploads/2023/01/tour-phu-quy-3n3d-2023-300x194.png",
+            "description": "Khám phá văn hóa Tây Nguyên và thành phố Buôn Ma Thuột trong tour 3 ngày 2 đêm.",
+            "category": "miền Trung"
+        },
+        {
+            "id": 13,
+            "name": "Tour Hồ Chí Minh - Côn Đảo 4 ngày 3 đêm",
+            "presale": 6800000,
+            "price": 6599999,
+            "hot": 1,
+            "duration": "4 ngày 3 đêm",
+            "address": "Hồ Chí Minh, Côn Đảo",
+            "image": "https://www.vietnambooking.com/wp-content/uploads/2023/01/vinh-hy-3n2d-lua-trai-10-300x194.jpg",
+            "description": "Thưởng thức vẻ đẹp của Côn Đảo và thành phố Hồ Chí Minh trong tour 4 ngày 3 đêm.",
+            "category": "miền Nam"
+        },
+        {
+            "id": 14,
+            "name": "Tour Hà Nội - Ninh Bình 2 ngày 1 đêm",
+            "presale": 3600000,
+            "price": 3399999,
+            "hot": 0,
+            "duration": "2 ngày 1 đêm",
+            "address": "Hà Nội, Ninh Bình",
+            "image": "https://www.vietnambooking.com/wp-content/uploads/2024/03/tour-Euro-chau-au-9n8d-300x194.jpg",
+            "description": "Khám phá thủ đô Hà Nội và di sản Ninh Bình trong tour 2 ngày 1 đêm.",
+            "category": "miền Bắc"
+        },
+        {
+            "id": 15,
+            "name": "Tour Hạ Long - Cát Bà 3 ngày 2 đêm",
+            "presale": 5400000,
+            "price": 5199999,
+            "hot": 0,
+            "duration": "3 ngày 2 đêm",
+            "address": "Hạ Long, Cát Bà",
+            "image": "https://www.vietnambooking.com/wp-content/uploads/2024/03/tour-hoa-anh-dao-nhat-ban-8-300x194.jpg",
+            "description": "Thưởng thức vịnh Hạ Long và đảo Cát Bà trong tour 3 ngày 2 đêm.",
+            "category": "miền Bắc"
+        },
+        {
+            "id": 16,
+            "name": "Tour Cần Thơ - Châu Đốc 2 ngày 1 đêm",
+            "presale": 3800000,
+            "price": 3599999,
+            "hot": 1,
+            "duration": "2 ngày 1 đêm",
+            "address": "Cần Thơ, Châu Đốc",
+            "image": "https://www.vietnambooking.com/wp-content/uploads/2024/03/tour-con-minh-dai-ly-le-giang-shangrila-6n5d-9-300x194.jpg",
+            "description": "Khám phá miền Tây sông nước với tour Cần Thơ và Châu Đốc 2 ngày 1 đêm.",
+            "category": "miền Nam"
+        },
+        {
+            "id": 17,
+            "name": "Tour Đà Lạt - Nha Trang 4 ngày 3 đêm",
+            "presale": 6200000,
+            "price": 5999999,
+            "hot": 1,
+            "duration": "4 ngày 3 đêm",
+            "address": "Đà Lạt, Nha Trang",
+            "image": "https://www.vietnambooking.com/wp-content/uploads/2019/12/tour-gio-chot-1.jpg.jpg",
+            "description": "Phiêu du miền cát trắng và cao nguyên mờ sương với tour Đà Lạt - Nha Trang 4 ngày 3 đêm.",
+            "category": "miền Nam"
+        },
+        {
+            "id": 18,
+            "name": "Tour Huế - Quảng Bình 4 ngày 3 đêm",
+            "presale": 6000000,
+            "price": 5799999,
+            "hot": 0,
+            "duration": "4 ngày 3 đêm",
+            "address": "Huế, Quảng Bình",
+            "image": "https://www.vietnambooking.com/wp-content/uploads/2019/12/tour-gio-chot-2.jpg.jpg",
+            "description": "Khám phá di sản Huế và thiên nhiên Quảng Bình trong tour 4 ngày 3 đêm.",
+            "category": "miền Trung"
+        },
+        {
+            "id": 19,
+            "name": "Tour Sài Gòn - Tây Ninh 2 ngày 1 đêm",
+            "presale": 3000000,
+            "price": 2799999,
+            "hot": 1,
+            "duration": "2 ngày 1 đêm",
+            "address": "Sài Gòn, Tây Ninh",
+            "image": "https://www.vietnambooking.com/wp-content/uploads/2019/12/tour-gio-chot-7.jpg",
+            "description": "Khám phá Sài Gòn sôi động và thiên nhiên Tây Ninh trong tour 2 ngày 1 đêm.",
+            "category": "miền Nam"
+        },
+        {
+            "id": 20,
+            "name": "Tour Vũng Tàu - Bà Rịa 3 ngày 2 đêm",
+            "presale": 5000000,
+            "price": 4799999,
+            "hot": 0,
+            "duration": "3 ngày 2 đêm",
+            "address": "Vũng Tàu, Bà Rịa",
+            "image": "https://www.vietnambooking.com/wp-content/uploads/2019/12/tour-gio-chot-7.jpg",
+            "description": "Thưởng thức không gian biển đẹp của Vũng Tàu và Bà Rịa trong tour 3 ngày 2 đêm.",
+            "category": "miền Nam"
+        }
+    ],
+    "user": [
+        {
+            "username": "teo",
+            "password": "123"
+        },
+        {
+            "username": "ti",
+            "password": "123"
+        }
+    ]
+}

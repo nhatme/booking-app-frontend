@@ -7,12 +7,9 @@ import { SignupComponent } from './page/signup/signup.component';
 import { CheckoutComponent } from './page/checkout/checkout.component';
 import { PaymentComponent } from './page/payment/payment.component';
 import { LayoutComponent } from './page/layout/layout.component';
+import { CategoryComponent } from './page/category/category.component';
 
 export const routes: Routes = [
-    {
-        path: 'login',
-        component: LoginComponent
-    },
     {
         path: '',
         component: LayoutComponent,
@@ -22,12 +19,8 @@ export const routes: Routes = [
                 component: HomeComponent
             },
             {
-                path: 'detail',
+                path: 'detail/:id',
                 component: DetailComponent,
-            },
-            {
-                path: 'contact',
-                component: ContactComponent
             },
             {
                 path: 'checkout',
@@ -37,13 +30,22 @@ export const routes: Routes = [
                 path: 'payment',
                 component: PaymentComponent
             },
-
+            {
+                path: 'all',
+                component: CategoryComponent
+            }
         ]
+    },
+    {
+        path: 'login',
+        component: LoginComponent
     },
     {
         path: 'signup',
         component: SignupComponent
     },
-
-
+    {
+        path: 'contact',
+        component: ContactComponent
+    },
 ];

@@ -27,14 +27,14 @@
         </div>
     </div>
 
-    <div class="row my-5">
-        <h3 class="text-danger">Tour Nha Trang – Đà Lạt 4 ngày 3 đêm: Khám phá thành phố biển đến xứ ngàn hoa</h3>
+    <div *ngIf="product" class="row my-5">
+        <h3 class="text-danger">{{product.name}}</h3>
         <div class="col-sm-8">
             <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <img height="400px" style="object-fit: cover;"
-                            src="assets/tour-du-lich-nha-trang-da-lat-20-9-2017.jpg" class="d-block w-100" alt="...">
+                            [src]="product.image" class="d-block w-100" alt="{{product.name}}">
                     </div>
                     <div class="carousel-item">
                         <img height="400px" style="object-fit: cover;"
@@ -58,8 +58,8 @@
             </div>
             <div class="mt-4">
                 <div class="d-flex justify-content-between">
-                    <div><i class="bi bi-geo-alt-fill"></i><span><strong>Nha Trang</strong></span></div>
-                    <div>3 ngày 3 đêm</div>
+                    <div><i class="bi bi-geo-alt-fill"></i><span><strong>{{product.address}}</strong></span></div>
+                    <div>{{product.duration}}</div>
                     <div>Phương tiện <i class="bi bi-train-front-fill"></i></div>
                 </div>
                 <div>Mã tour: <span class="text-danger">ABCXYZ</span></div>
@@ -99,8 +99,7 @@
                 </div>
             </div>
 
-            <div class="my-3">Tham gia tour Nha Trang Đà Lạt 4 ngày 3 đêm của Vietnam Booking, quý khách sẽ được phiêu
-                du nơi miền cát trắng và cao nguyên mờ sương lãng mạn.</div>
+            <div class="my-3">{{product.description}}</div>
 
             <!-- collapse  -->
             <p class="d-inline-flex gap-1">
@@ -214,11 +213,12 @@
             </div>
         </div>
         <div class="col-sm-4">
+            <!-- book tour  -->
             <div class="card bg-black">
                 <div class="card-body text-warning">
                     <div class="mb-3">
-                        <del>6,006,000 VND</del>
-                        <h3><strong>4,290,000</strong></h3>
+                        <del>{{product.presale | currency: 'VND'}} VND</del>
+                        <h3><strong>{{product.price | currency: "VND"}}</strong></h3>
                         <span>VND/người</span>
                     </div>
                     <div>
@@ -235,11 +235,12 @@
                             <option value="5">5 người</option>
                         </select>
                     </div>
-                    <div class="btn btn-warning mt-2">
+                    <div routerLink="/checkout" class="btn btn-warning mt-2">
                         ĐẶT TOUR
                     </div>
                 </div>
             </div>
+            <!-- end book tour  -->
             <div class="card mt-3">
                 <h5 class="card-title bg-primary text-white p-3">Tổng đài tư vấn</h5>
                 <div class="card-body">
@@ -265,7 +266,6 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
 

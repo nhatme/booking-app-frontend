@@ -1,6 +1,5 @@
-
 <!-- booking interface  -->
-<div class="container">
+<!-- <div class="container">
     <div class="card">
         <div class="card-title p-3">
             <div class="row align-items-center">
@@ -94,133 +93,45 @@
             <button class="btn btn-primary"><i class="bi bi-search-heart-fill"></i>Tìm chuyến bay</button>
         </div>
     </div>
-</div>
-
+</div> -->
 
 <!-- tour gio chot component -->
 <div class="my-5 container">
     <h3 class="text-center">Tour giờ chót</h3>
-    <p class="text-center"><a href="#">xem all</a></p>
-    <div class="row">
-
-        <div class="col-sm-3">
+    <p class="text-center"><a [routerLink]="['all']">Xem all</a></p>
+    <div *ngIf="paginatedProducts.length > 0; else loading" class="row">
+        <div *ngFor="let product of paginatedProducts" class="col-sm-3 mt-4">
             <div class="card">
-                <div class="position-relative">
-                    <img src="assets/tour-du-lich-tan-cuong-9n9d.png" width="100%" alt="">
+                <a class="position-relative" [routerLink]="['detail', product.id]">
+                    <img [src]="product.image" width="100%" alt="{{product.name}}">
                     <div class="position-absolute top-0 end-0 bg-primary text-white p-2">Deal hè HOT cực</div>
                     <div class="position-absolute start-0 bottom-0 bg-danger text-white p-2 m-3">00 ngày 00:00:00</div>
-                </div>
+                </a>
                 <div class="bg-info p-2">
-                    <span><i class="bi bi-geo-alt-fill"></i></span>Đà Lạt, Nha Trang
+                    <span><i class="bi bi-geo-alt-fill"></i></span>{{product.address}}
                 </div>
-                <span class="mt-2 px-3">Tour Nha trang - tân cương 4 ngày 3 đêm</span>
+                <span class="mt-2 px-3">{{product.name}}</span>
                 <div class="card-body d-flex justify-content-between">
                     <div>
-                        <p><i class="bi bi-stopwatch-fill"></i> 4 ngày 3 đêm</p>
-                        <p><i class="bi bi-geo-alt-fill"></i> 4 ngày 3 đêm</p>
-                        <p><i class="bi bi-calendar-day-fill"></i> 4 ngày 3 đêm</p>
+                        <p><i class="bi bi-stopwatch-fill"></i>{{product.duration}}</p>
                     </div>
                     <div>
                         <i class="bi bi-train-front-fill"></i>
                     </div>
                 </div>
                 <div class="card-footer">
-                    <span><del>6,290,000</del></span>
-                    <sup>đ</sup>
-                    <span class="text-primary"><strong>4,290,000</strong></span>
-                    <sup class="text-primary">đ</sup>
+                    <span><del>{{product.presale | currency: 'VND'}}</del></span>
+                    <span class="text-primary" style="margin-left: 12px;"><strong>{{product.price | currency:
+                            'VND'}}</strong></span>
                 </div>
             </div>
         </div>
-        <div class="col-sm-3">
-            <div class="card">
-                <div class="position-relative">
-                    <img src="assets/tour-du-lich-tan-cuong-9n9d.png" width="100%" alt="">
-                    <div class="position-absolute top-0 end-0 bg-primary text-white p-2">Deal hè HOT cực</div>
-                    <div class="position-absolute start-0 bottom-0 bg-danger text-white p-2 m-3">00 ngày 00:00:00</div>
-                </div>
-                <div class="bg-info p-2">
-                    <span><i class="bi bi-geo-alt-fill"></i></span>Đà Lạt, Nha Trang
-                </div>
-                <span class="mt-2 px-3">Tour Nha trang - tân cương 4 ngày 3 đêm</span>
-                <div class="card-body d-flex justify-content-between">
-                    <div>
-                        <p><i class="bi bi-stopwatch-fill"></i> 4 ngày 3 đêm</p>
-                        <p><i class="bi bi-geo-alt-fill"></i> 4 ngày 3 đêm</p>
-                        <p><i class="bi bi-calendar-day-fill"></i> 4 ngày 3 đêm</p>
-                    </div>
-                    <div>
-                        <i class="bi bi-train-front-fill"></i>
-                    </div>
-                </div>
-                <div class="card-footer">
-                    <span><del>6,290,000</del></span>
-                    <sup>đ</sup>
-                    <span class="text-primary"><strong>4,290,000</strong></span>
-                    <sup class="text-primary">đ</sup>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-3">
-            <div class="card">
-                <div class="position-relative">
-                    <img src="assets/tour-du-lich-tan-cuong-9n9d.png" width="100%" alt="">
-                    <div class="position-absolute top-0 end-0 bg-primary text-white p-2">Deal hè HOT cực</div>
-                    <div class="position-absolute start-0 bottom-0 bg-danger text-white p-2 m-3">00 ngày 00:00:00</div>
-                </div>
-                <div class="bg-info p-2">
-                    <span><i class="bi bi-geo-alt-fill"></i></span>Đà Lạt, Nha Trang
-                </div>
-                <span class="mt-2 px-3">Tour Nha trang - tân cương 4 ngày 3 đêm</span>
-                <div class="card-body d-flex justify-content-between">
-                    <div>
-                        <p><i class="bi bi-stopwatch-fill"></i> 4 ngày 3 đêm</p>
-                        <p><i class="bi bi-geo-alt-fill"></i> 4 ngày 3 đêm</p>
-                        <p><i class="bi bi-calendar-day-fill"></i> 4 ngày 3 đêm</p>
-                    </div>
-                    <div>
-                        <i class="bi bi-train-front-fill"></i>
-                    </div>
-                </div>
-                <div class="card-footer">
-                    <span><del>6,290,000</del></span>
-                    <sup>đ</sup>
-                    <span class="text-primary"><strong>4,290,000</strong></span>
-                    <sup class="text-primary">đ</sup>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-3">
-            <div class="card">
-                <div class="position-relative">
-                    <img src="assets/tour-du-lich-tan-cuong-9n9d.png" width="100%" alt="">
-                    <div class="position-absolute top-0 end-0 bg-primary text-white p-2">Deal hè HOT cực</div>
-                    <div class="position-absolute start-0 bottom-0 bg-danger text-white p-2 m-3">00 ngày 00:00:00</div>
-                </div>
-                <div class="bg-info p-2">
-                    <span><i class="bi bi-geo-alt-fill"></i></span>Đà Lạt, Nha Trang
-                </div>
-                <span class="mt-2 px-3">Tour Nha trang - tân cương 4 ngày 3 đêm</span>
-                <div class="card-body d-flex justify-content-between">
-                    <div>
-                        <p><i class="bi bi-stopwatch-fill"></i> 4 ngày 3 đêm</p>
-                        <p><i class="bi bi-geo-alt-fill"></i> 4 ngày 3 đêm</p>
-                        <p><i class="bi bi-calendar-day-fill"></i> 4 ngày 3 đêm</p>
-                    </div>
-                    <div>
-                        <i class="bi bi-train-front-fill"></i>
-                    </div>
-                </div>
-                <div class="card-footer">
-                    <span><del>6,290,000</del></span>
-                    <sup>đ</sup>
-                    <span class="text-primary"><strong>4,290,000</strong></span>
-                    <sup class="text-primary">đ</sup>
-                </div>
-            </div>
-        </div>
-
     </div>
+    <mat-paginator class="pt-4" [length]="totalItems" [pageSize]="pageSize" [pageIndex]="currentPage" (page)="pageChange($event)"
+        showFirstLastButtons aria-label="Select page"></mat-paginator>
+    <ng-template #loading>
+        Loading...
+    </ng-template>
 </div>
 
 <!-- Combo Khách sạn + Vé máy bay ưu đãi component -->
