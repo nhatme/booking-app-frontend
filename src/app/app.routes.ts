@@ -8,6 +8,7 @@ import { CheckoutComponent } from './page/checkout/checkout.component';
 import { PaymentComponent } from './page/payment/payment.component';
 import { LayoutComponent } from './page/layout/layout.component';
 import { CategoryComponent } from './page/category/category.component';
+import { CartComponent } from './page/cart/cart.component';
 
 export const routes: Routes = [
     {
@@ -33,6 +34,10 @@ export const routes: Routes = [
             {
                 path: 'all',
                 component: CategoryComponent
+            },
+            {
+                path: 'cart',
+                component: CartComponent
             }
         ]
     },

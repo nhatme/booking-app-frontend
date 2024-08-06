@@ -33,8 +33,8 @@
             <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img height="400px" style="object-fit: cover;"
-                            [src]="product.image" class="d-block w-100" alt="{{product.name}}">
+                        <img height="400px" style="object-fit: cover;" [src]="product.image" class="d-block w-100"
+                            alt="{{product.name}}">
                     </div>
                     <div class="carousel-item">
                         <img height="400px" style="object-fit: cover;"
@@ -129,12 +129,13 @@
                 </div>
             </div>
 
+            <!-- book tour  -->
             <div>
                 <div class="card bg-black">
                     <div class="card-body text-warning">
                         <div class="mb-3">
-                            <del>6,006,000 VND</del>
-                            <h3><strong>4,290,000</strong></h3>
+                            <del>{{product.presale}}</del>
+                            <h3><strong>{{product.price}}</strong></h3>
                             <span>VND/người</span>
                         </div>
                         <div>
@@ -143,7 +144,8 @@
                         </div>
                         <div class="d-flex mt-2">
                             <p class="mb-0">SỐ KHÁCH</p>
-                            <select class="form-select" aria-label="Default select example">
+                            <select class="form-select" [(ngModel)]="passengerCount"
+                                aria-label="Default select example">
                                 <option selected value="1">1 người</option>
                                 <option value="2">2 người</option>
                                 <option value="3">3 người</option>
@@ -151,7 +153,7 @@
                                 <option value="5">5 người</option>
                             </select>
                         </div>
-                        <div class="btn btn-warning mt-2">
+                        <div class="btn btn-warning mt-2" (click)="bookTour()">
                             ĐẶT TOUR
                         </div>
                     </div>
@@ -213,6 +215,7 @@
             </div>
         </div>
         <div class="col-sm-4">
+
             <!-- book tour  -->
             <div class="card bg-black">
                 <div class="card-body text-warning">
@@ -227,7 +230,7 @@
                     </div>
                     <div class="d-flex mt-2">
                         <span class="mb-0">SỐ KHÁCH</span>
-                        <select class="form-select" aria-label="">
+                        <select class="form-select" [(ngModel)]="passengerCount" aria-label="">
                             <option selected value="1">1 người</option>
                             <option value="2">2 người</option>
                             <option value="3">3 người</option>
@@ -235,7 +238,7 @@
                             <option value="5">5 người</option>
                         </select>
                     </div>
-                    <div routerLink="/checkout" class="btn btn-warning mt-2">
+                    <div class="btn btn-warning mt-2" (click)="bookTour()">
                         ĐẶT TOUR
                     </div>
                 </div>

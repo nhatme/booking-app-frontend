@@ -16,43 +16,51 @@
                             </div>
                         </div>
                         <!-- form  -->
-                        <form>
+
+                        <form [formGroup]="loginForm" (submit)="onSubmit($event)">
                             <div class="row gy-3 overflow-hidden">
                                 <div class="col-12">
                                     <div class="form-floating mb-3">
-                                        <input type="text" class="form-control" name="email" id="email"
+                                        <input type="text" class="form-control" formControlName="email" id="email"
                                             placeholder="name@example.com" required>
                                         <label for="email" class="form-label">Email</label>
+                                        <div
+                                            *ngIf="loginForm.get('email')?.invalid && (loginForm.get('email')?.dirty || loginForm.get('email')?.touched)">
+                                            <small class="text-danger"
+                                                *ngIf="loginForm.get('email')?.errors?.['required']">Email is
+                                                required</small>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="form-floating mb-3">
-                                        <input type="text" class="form-control" name="password" id="password"
-                                            value="" placeholder="Password" required>
+                                        <input type="password" class="form-control" formControlName="password"
+                                            id="password" placeholder="Password" required>
                                         <label for="password" class="form-label">Password</label>
+                                        <div
+                                            *ngIf="loginForm.get('password')?.invalid && (loginForm.get('password')?.dirty || loginForm.get('password')?.touched)">
+                                            <small class="text-danger"
+                                                *ngIf="loginForm.get('password')?.errors?.['required']">Password is required</small>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="col-12">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" name="remember_me"
-                                            id="remember_me">
-                                        <label class="form-check-label text-secondary" for="remember_me">
-                                            Keep me logged in
-                                        </label>
-                                    </div>
-                                </div>
+
                                 <div class="col-12">
                                     <div class="d-grid">
-                                        <button class="btn bsb-btn-xl btn-primary" type="submit" routerLink="">Log in now</button>
+                                        <button class="btn bsb-btn-xl btn-primary" type="submit">Log in now</button>
                                     </div>
                                 </div>
                             </div>
                         </form>
+
+
+
                         <div class="row">
                             <div class="col-12">
                                 <hr class="mt-5 mb-4 border-secondary-subtle">
                                 <div class="d-flex gap-2 gap-md-4 flex-column flex-md-row justify-content-md-end">
-                                    <div class="link-secondary text-decoration-none btn" routerLink="/signup">Create new account</div>
+                                    <div class="link-secondary text-decoration-none btn" routerLink="/signup">Create new
+                                        account</div>
                                     <div class="link-secondary text-decoration-none btn">Forgot password</div>
                                 </div>
                             </div>
